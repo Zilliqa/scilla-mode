@@ -58,8 +58,8 @@
     ( ,(regexp-opt scilla-constants 'words) . font-lock-constant-face)
     ;; Numerical constants. Decimal or Hexadecimal integers.
     ("\\(\\b[0-9]+\\b\\|\\b0x[0-9a-fA-F]+\\b\\)" . font-lock-constant-face)
-    ;; Match variable names
-    ("\\b[a-z_]+[a-zA-Z0-9]*\\b" . font-lock-variable-name-face)
+    ;; ;; Match variable definitions or declarations
+    ;; ("\\b[a-z_]+[a-zA-Z0-9]*\\b" . font-lock-variable-name-face)
     ;; Match constructors and type variables
     ("\\b[A-Z]+[a-zA-Z0-9]*\\b" . font-lock-function-name-face)
 
