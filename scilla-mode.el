@@ -1,3 +1,17 @@
+;;; scilla-mode.el --- Major mode for Scilla language -*- lexical-binding: t; -*-
+
+;; Copyright (C) 2019 Zilliqa Research Pte. Ltd.
+
+;; Authors: The Scilla team
+;; Keywords: languages, blockchain, smart-contract, Scilla, Zilliqa
+;; Version: 0.1
+;; Package-Requires: ((emacs "25.1"))
+;; URL: https://github.com/Zilliqa/scilla-mode
+
+;; This file is not part of GNU Emacs.
+
+;;; Commentary:
+
 ;; This is an Emacs major mode for the Scilla language.
 ;; Include the below lines (with path set properly) in ~/.emacs
 ;;    ;; For enabling flycheck mode for Scilla.
@@ -10,6 +24,26 @@
 ;; (use-package scilla
 ;;   :require flycheck
 ;;   :load-path (lambda () (concat scilla-root "/misc/emacs-mode")))
+
+;;; License:
+
+;; This file is part of scilla.
+;;
+;; This program is free software: you can redistribute it and/or modify it under the
+;; terms of the GNU General Public License as published by the Free Software
+;; Foundation, either version 3 of the License, or (at your option) any later
+;; version.
+;;
+;; This program is distributed in the hope that it will be useful, but WITHOUT ANY
+;; WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+;; A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+;;
+;; You should have received a copy of the GNU General Public License along with
+;; this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+;;; Code:
+
 
 (defvar scilla-mode-map
   (let ((map (make-sparse-keymap)))
